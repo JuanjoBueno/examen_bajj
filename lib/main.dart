@@ -1,4 +1,5 @@
 import 'package:examen_bajj/routes/app_routes.dart';
+import 'package:examen_bajj/screens/home_screen_bajj.dart';
 import 'package:examen_bajj/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -12,10 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      
-      initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.getAppRoutes(),
-      onGenerateRoute: AppRoutes.onGenerateRoute,
+      home: const HomeScreen(),
+   
       theme: AppTheme.lightTheme
     );
   }
