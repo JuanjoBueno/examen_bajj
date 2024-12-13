@@ -53,7 +53,12 @@ class SigninScreenBajj extends StatelessWidget {
             child: const SizedBox(
                 width: 100, child: Center(child: Text('Sing in')))),
         ],
-      )
+      ),
+           floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.close),
+        onPressed: () => Navigator.pop(context)
+        
+      ),
       
       
       
